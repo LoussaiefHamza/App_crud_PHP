@@ -11,7 +11,7 @@ if (isset($_GET['id'])) {
     if (!$result) {
         die("Query Failed");
     } else {
-        header('Location: index.php?delete_msg=You have deleted the record.');
+        header('Location: index.php?delete_msg=Etudiant supprimé avec succès.');
     }
 }
 ?>

@@ -11,6 +11,6 @@
 </head>
 
 <body>
-    <h1 id="main-title">CRUD APPLICATION IN PHP <a class="btn btn-danger" style="margin-right:5px; float:right" href="logout.php">Logout</a></h1>
+    <h1 id="main-title">Application de gestion des étudiants<a class="btn btn-danger" style="margin-right:5px; float:right" href="logout.php">Déconnecter</a></h1>
     
     <div class="container">

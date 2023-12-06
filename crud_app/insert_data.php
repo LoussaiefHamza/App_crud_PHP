@@ -4,8 +4,8 @@ if (isset($_POST['add_students'])) {
     $lname = $_POST['l_name'];
     $age = $_POST['age'];
 
-    if ($fname == "" || empty($fname)) {
-        header('location:index.php?message=You need to fill in the first name!');
+    if (($fname == "" || empty($fname)) || ($lname == "" || empty($lname)) || ($age == "" || empty($age))) {
+        header('location:index.php?message=Remplir tout les champs svp!');
     } else {
         // Établir une connexion à la base de données
         $host = 'localhost';
@@ -25,7 +25,7 @@ if (isset($_POST['add_students'])) {
         if (!$result) {
             die("Query failed");
         } else {
-            header('location:index.php?insert_msg=Your data has been added successfully');
+            header('location:index.php?insert_msg=Etudiant ajouté avec succès');
         }
     }
 }
